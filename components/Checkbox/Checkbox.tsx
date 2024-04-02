@@ -1,18 +1,18 @@
 "use client";
 import style from "./Checkbox.module.scss";
 import Image from "next/image";
-import { useState, ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
+
+interface CustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  checked: boolean;
+  handleClick: () => void;
+};
 
 export default function Checkbox({
-  defaultChecked = false,
+  checked,
+  handleClick,
   ...props
-}: Readonly<ButtonHTMLAttributes<HTMLButtonElement>>) {
-  const [checked, setChecked] = useState(defaultChecked);
-
-  function toggleChecked() {
-    setChecked(!checked);
-  };
-
+}: Readonly<CustomButtonProps>) {
   const checkSrc = checked ? "/icons/check-ff.svg" : "/icons/check-87.svg";
   const checkAlt = "Check";
   const checkSize = 17;
@@ -22,7 +22,7 @@ export default function Checkbox({
       className={style.main}
       type="button"
       data-checked={checked}
-      onClick={toggleChecked}
+      onClick={handleClick}
       {...props}
     >
       <Image
