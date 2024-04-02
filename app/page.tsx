@@ -12,7 +12,16 @@ export default function Home() {
 
   return (
     <div className="page">
-      <PageSelector pages={pages} />
+      <div className="showcase">
+        <div>
+          <span>Select all does not disable fields</span>
+          <PageSelector pages={pages} />
+        </div>
+        <div>
+          <span>Select all disables fields</span>
+          <PageSelector pages={pages} selectAllDisables />
+        </div>
+      </div>
     </div>
   );
 };
