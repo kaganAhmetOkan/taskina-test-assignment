@@ -6,7 +6,7 @@
   height: 25px;
   border: 1px solid rgba(var(--border-primary-60));
   border-radius: 6px;
-  background-color: transparent;
+  background-color: var(--bg-primary);
   cursor: pointer;
   transition: background-color 200ms, border 200ms;
 }
