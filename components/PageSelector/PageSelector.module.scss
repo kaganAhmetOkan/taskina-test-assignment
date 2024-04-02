@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  padding: 10px 0;
+  width: 370px;
+  height: 326px;
+  border-radius: 6px;
+  box-shadow: var(--shadow-primary), var(--shadow-secondary);
+}
+
+.seperator {
+  padding: 10px 15px;
+}
+
+.seperator > hr {
+  border: none;
+  border-top: 0.7px solid var(--border-primary);
+  border-radius: 1px;
+}
+
+.pages {
+  width: 370px;
+  height: 164px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.button {
+  padding: 10px 15px;
+}
