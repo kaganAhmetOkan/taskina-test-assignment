@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 340px;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: var(--fg-primary);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.main:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.main:active {
+  background-color: var(--color-primary);
+}
