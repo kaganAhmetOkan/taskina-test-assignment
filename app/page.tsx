@@ -22,6 +22,10 @@ export default function Home() {
           <PageSelector pages={pages} selectAllDisables />
         </div>
       </div>
+      <div className="links">
+        <a href="https://github.com/kaganAhmetOkan/taskina-test-assignment">GitHub Repository</a>
+        <a href="https://www.upwork.com/freelancers/~013128e1c954c7dc29">Kağan Ahmet Okan</a>
+      </div>
     </div>
   );
 };

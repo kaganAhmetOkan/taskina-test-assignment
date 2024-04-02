@@ -52,7 +52,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 128px;
-  gap: 16px;
+  gap: 128px;
 }
 
 .showcase {
@@ -69,4 +69,15 @@ ul {
 
 .showcase > div > span {
   font-size: 18px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links > a {
+  text-decoration: underline;
+  text-align: center;
 }
